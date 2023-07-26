@@ -1,0 +1,87 @@
+[debug] [2023-07-26T18:15:19.740Z] ----------------------------------------------------------------------
+[debug] [2023-07-26T18:15:19.743Z] Command:       G:\nvm\nodejs\node.exe C:\Users\mrmat\AppData\Local\pnpm\global\5\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-07-26T18:15:19.743Z] CLI Version:   12.4.6
+[debug] [2023-07-26T18:15:19.743Z] Platform:      win32
+[debug] [2023-07-26T18:15:19.743Z] Node Version:  v20.5.0
+[debug] [2023-07-26T18:15:19.743Z] Time:          Wed Jul 26 2023 21:15:19 GMT+0300 (Eastern European Summer Time)
+[debug] [2023-07-26T18:15:19.744Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-26T18:15:19.751Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-26T18:15:19.751Z] > authorizing via signed-in user (mr.math2024@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  G:\Web Development\Test 2
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-07-26T18:16:09.878Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-07-26T18:16:09.878Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"mhhtest3","name":"mhhtest3"}
+[debug] [2023-07-26T18:16:10.906Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-07-26T18:16:10.907Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.6538062066359370268"}
+[debug] [2023-07-26T18:16:10.910Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6538062066359370268 [none]
+[debug] [2023-07-26T18:16:11.741Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6538062066359370268 200
+[debug] [2023-07-26T18:16:11.742Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6538062066359370268 {"name":"operations/cp.6538062066359370268"}
+[debug] [2023-07-26T18:16:12.246Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-07-26T18:16:12.248Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6538062066359370268 [none]
+[debug] [2023-07-26T18:16:12.579Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6538062066359370268 200
+[debug] [2023-07-26T18:16:12.579Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6538062066359370268 {"name":"operations/cp.6538062066359370268"}
+[debug] [2023-07-26T18:16:13.581Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-07-26T18:16:13.582Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6538062066359370268 [none]
+[debug] [2023-07-26T18:16:13.943Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6538062066359370268 200
+[debug] [2023-07-26T18:16:13.944Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6538062066359370268 {"name":"operations/cp.6538062066359370268","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"303422052710","projectId":"mhhtest3","lifecycleState":"ACTIVE","name":"mhhtest3","createTime":"2023-07-26T18:16:14.509Z"}}
+[debug] [2023-07-26T18:16:13.948Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/mhhtest3:addFirebase [none]
+[debug] [2023-07-26T18:16:17.282Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/mhhtest3:addFirebase 200
+[debug] [2023-07-26T18:16:17.283Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/mhhtest3:addFirebase {"name":"operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3"}
+[debug] [2023-07-26T18:16:17.284Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 [none]
+[debug] [2023-07-26T18:16:17.893Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 200
+[debug] [2023-07-26T18:16:17.894Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 {"name":"operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3"}
+[debug] [2023-07-26T18:16:18.409Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-07-26T18:16:18.410Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 [none]
+[debug] [2023-07-26T18:16:19.021Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 200
+[debug] [2023-07-26T18:16:19.021Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 {"name":"operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3"}
+[debug] [2023-07-26T18:16:20.030Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-07-26T18:16:20.031Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 [none]
+[debug] [2023-07-26T18:16:20.488Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 200
+[debug] [2023-07-26T18:16:20.488Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 {"name":"operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3"}
+[debug] [2023-07-26T18:16:22.501Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-07-26T18:16:22.502Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 [none]
+[debug] [2023-07-26T18:16:23.118Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 200
+[debug] [2023-07-26T18:16:23.118Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 {"name":"operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3"}
+[debug] [2023-07-26T18:16:27.118Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-07-26T18:16:27.119Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 [none]
+[debug] [2023-07-26T18:16:27.552Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 200
+[debug] [2023-07-26T18:16:27.553Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 {"name":"operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3"}
+[debug] [2023-07-26T18:16:35.566Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-07-26T18:16:35.566Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 [none]
+[debug] [2023-07-26T18:16:36.139Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 200
+[debug] [2023-07-26T18:16:36.139Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3 {"name":"operations/workflows/OTc2YTJkNjgtNWNiYy00YTNjLTkzOWUtMDU1Y2M0YjA3ZjY3","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"mhhtest3","projectNumber":"303422052710","displayName":"mhhtest3","name":"projects/mhhtest3","resources":{"hostingSite":"mhhtest3"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: mhhtest3
+[info]    - Project Name: mhhtest3
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/mhhtest3/overview
+[info] i  Using project mhhtest3 (mhhtest3) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
